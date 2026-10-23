@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Formera — Visual Studio</title>
+    <meta name="description" content="Independent visual studio creating identities, motion, and digital experiences."/>
+    <meta name="author" content="Formera"/>
+    <meta property="og:title" content="Formera — Visual Studio"/>
+    <meta property="og:description" content="Visual futures, formed."/>
+    <meta property="og:type" content="website"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap"/>
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <link rel="icon" href="/favicon.png" type="image/png"/>
+  </head>
+  <body>
+    <div class="flex min-h-screen items-center justify-center bg-background px-4">
+      <div class="max-w-md text-center">
+        <h1 class="text-7xl font-bold text-foreground">404</h1>
+        <h2 class="mt-4 text-xl font-semibold text-foreground">Page not found</h2>
+        <p class="mt-2 text-sm text-muted-foreground">The page you&#x27;re looking for doesn&#x27;t exist or has been moved.</p>
+        <div class="mt-6">
+          <a class="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90" href="/">Go home</a>
+        </div>
+      </div>
+    </div>
+    <script>
+      // GitHub Pages serves this file at any URL depth. On a project site (user.github.io/repo/) the root-relative
+      // paths above miss the "/repo" folder, so re-point them. On a custom domain or user site nothing changes.
+      (function () {
+        var repo = location.pathname.split("/")[1];
+        function fix() {
+          document.querySelectorAll('link[href^="/"],a[href="/"]').forEach(function (e) {
+            e.setAttribute("href", "/" + repo + e.getAttribute("href"));
+          });
+        }
+        if (repo) fetch("/css/styles.css", { method: "HEAD" }).then(function (r) { if (!r.ok) fix(); }, fix);
+      })();
+    </script>
+  </body>
+</html>
