@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://formeracreations-08.github.io/formera-in/sitemap.xml
+Sitemap: https://formera-08.github.io/formera-in/sitemap.xml
